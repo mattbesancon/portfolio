@@ -7,16 +7,16 @@ export default function Post() {
 
   useEffect(() => {
     sanityClient.fetch(`*[_type == 'post']{
-                      title,
-                      slug,
-                      mainImage{
-                        asset->{
-                          _id,
-                          url
-                        },
-                        alt
-                      }
-                }`)
+                        title,
+                        slug,
+                        mainImage{
+                          asset->{
+                            _id,
+                            url
+                          },
+                          alt
+                        }
+                      }`)
                 .then((data) => setPost(data))
                 .catch(console.error)
   }, []);
