@@ -11,7 +11,7 @@ class NavBar extends React.Component {
               exact to='/'
               activeClassName='text-white'
               className='inflex-flex items-center py-6 px-3 mr-4 text-red-100 hover:text-green-600 text-4xl font-bold cursive tracking-widest'>
-              Buzz
+              Matthieu Besançon
             </NavLink>
             <NavLink
               exact to='/post'
