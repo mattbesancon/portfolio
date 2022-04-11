@@ -1,4 +1,4 @@
-import sanityClient from '@sanity/client'
+const sanityClient = require('@sanity/client')
 
 const client = sanityClient({
     projectId: "klaxwjmb",
